@@ -1,0 +1,56 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título principal */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Imagen destacada */
+.imagen-destacada {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Subtítulo */
+.galeria h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de galería */
+.contenedor-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+/* Imágenes de galería */
+.contenedor-galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.contenedor-galeria img:hover {
+  transform: scale(1.05);
+}
